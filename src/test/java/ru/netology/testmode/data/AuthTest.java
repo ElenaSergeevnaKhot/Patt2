@@ -1,6 +1,7 @@
 package ru.netology.testmode.data;
 
 import com.codeborne.selenide.Condition;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -20,7 +21,10 @@ import static com.codeborne.selenide.Selenide.$;
      void setup() {
          open("http://localhost:9999");
 
+
 }
+
+
      @Test
      @DisplayName("Should successfully login with active registered user")
      void shouldSuccessfulLoginIfRegisteredActiveUser() {
